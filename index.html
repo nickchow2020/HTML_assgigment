@@ -10,12 +10,14 @@
 </head>
 <body>
   <form action="" id="sign_up_form">
-    <h1>Sign Up</h1>
-    <div>
-      <div class="nameWrapper">
+    <header>
+      <h1>Sign Up</h1>
+    </header>
+    <main>
+      <section class="nameWrapper">
         <input type="text" name="first_name" class="first_name" placeholder="First Name" id="first_name"><br>
         <input type="text" name="last_name" class="last_name" placeholder="Last Name" id="last_name"><br>
-      </div>
+      </section>
 
       <input type="text" name="mobile_number" class="mobile_no" placeholder="Mobile No."> </br>
       <input type="email" name="email" id="" class="email" placeholder="Email Address"> </br>
@@ -23,7 +25,7 @@
       <input type="password" name="con_password" class="con_password" placeholder="confirm password"> </br>
 
 
-      <div id="agreeWrapper">
+      <section id="agreeWrapper">
         <label for="agree" >
           <input type="checkbox" class="agree" id="agree">
           <strong>I Agree</strong> 
@@ -32,14 +34,12 @@
         <p>
           By click <a href ="#" class="spanRegister">Register</a>, you agree to the <a href ="#" class="term">Terms and Conditions</a> set out by this site, including our cookies Use 
         </p>
-      </div>
-
-      <div id="btnWrapper">
-        <input type="button" value="Register" id="btn_register" class="btn_form">
-        <input type="button" name="Sign In" value="Sign In" id="btn_signin" class="btn_form">
-      </div>
-
-    </div>
+      </section>
+    </main>
+    <footer id="btnWrapper">
+      <input type="button" value="Register" id="btn_register" class="btn_form">
+      <input type="button" name="Sign In" value="Sign In" id="btn_signin" class="btn_form">
+    </footer>
   </form>
 </body>
 </html>
