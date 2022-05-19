@@ -1,0 +1,61 @@
+// color variables
+$form-max-width: 1000px;
+$primary-color: #0F90E0;
+$secondary-color: #1AC922;
+$third-color: grey;
+$shadow-inset-color: lightgray;
+$text-color:white;
+$form-top-margin : 5rem;
+
+// media width
+$media-narrow: '(min-width:768px)';
+$media-wide: '(min-width:980px)';
+
+// Font Stacks
+$stack-sans-serif:Arial, Helvetica, sans-serif;
+$stack-comic-sans:"Comic Sans MS",$stack-sans-serif;
+$stack-arial-black:"Arial Black",$stack-sans-serif;
+
+// input layout
+@mixin normal-input-layout {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0 10px;
+  height: 4rem;
+  border-radius: 5px;
+  border: .6px solid $third-color;
+  font-size: 1.6rem;
+  box-shadow: inset .5px 0.5px 3px $shadow-inset-color;
+}
+
+//input focus layout
+@mixin normal-input-layout-focus {
+  border: solid 1px $primary-color;
+  outline: none;
+  box-shadow: 2px 1px 8px $primary-color;
+  opacity: .5;
+}
+
+// button layout
+@mixin form-buttons-layout {
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 4rem;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+//register button layout
+@mixin form-button-register-layout{
+  background: $primary-color;
+
+}
+
+//sign in button layout
+@mixin form-button-sign-in-layout {
+  background: $secondary-color;
+}
+
+

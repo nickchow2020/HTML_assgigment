@@ -1,0 +1,82 @@
+// import normalize .css
+@import "./normalize.scss";
+
+// import reusable variables partials
+@import "./variable";
+
+// initial all element to be fixed height and width
+*{
+  box-sizing: border-box;
+}
+
+body{
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+section{
+  font-family:$stack-sans-serif;
+  max-width: $form-max-width;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: $form-top-margin;
+}
+
+#sign_up_form{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(50px,auto);
+}
+
+.input_wrapper{
+  width: 100%;
+  margin-bottom: 1rem;
+
+  input{
+    @include normal-input-layout
+  }
+
+  input:focus{
+    @include normal-input-layout-focus
+  }
+}
+
+.btn_wrapper{
+  width: 100%;
+  margin-bottom: 1rem;
+
+  input{
+    @include form-buttons-layout;
+    color: $text-color;
+  }
+}
+
+
+#btn_register{
+  @include form-button-register-layout
+}
+
+#btn_sign-in{
+  @include form-button-sign-in-layout
+}
+
+@media only screen and #{$media-narrow}{
+  .nameWrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+  }
+}
+
+
+@media only screen and #{$media-wide}{
+  .btnsWrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+  }
+}
+
+
+
+
